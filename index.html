@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Higher Order Function</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body id="info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <form id="createpost" class="mt-5 text-white">
+            <div class="form-goup">
+              <label for="title"> Title </label>
+              <input type="text" id="title" class="form-control" />
+            </div>
+            <div class="form-goup mt-3">
+              <label for="body"> Content </label>
+              <textarea
+                type="text"
+                id="body"
+                class="form-control"
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="form-goup mt-3">
+              <label for="userId"> ID </label>
+              <select class="form-control" id="userId">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="text-right mt-4">
+              <button class="btn btn-success" id="submitBtn">Add post</button>
+              <button class="btn btn-info d-none" id="updateBtn" type="button">Update</button>
+            </div>
+          </form>
+          <div id="postId"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
